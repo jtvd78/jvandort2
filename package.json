@@ -1,0 +1,23 @@
+{
+  "name": "jvandort2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "dependencies": {
+    "@types/react": "^16.0.40",
+    "@types/react-dom": "^16.0.4",
+    "@types/react-router-dom": "^4.2.4",
+    "autoprefixer": "^8.1.0",
+    "babel-preset-typescript": "^7.0.0-alpha.19",
+    "node-sass": "^4.7.2",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-router-dom": "^4.2.2",
+    "sass-autoprefixer": "^1.0.1"
+  },
+  "devDependencies": {
+    "typescript": "^2.7.2"
+  },
+  "author": "",
+  "license": "ISC"
+}

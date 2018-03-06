@@ -1,0 +1,175 @@
+$header-height: 60px;
+
+$center-color:#E5E5E5;
+$background-color: #555;
+$radius: 10px;
+$item-padding: 10px;
+
+$min-width: 960px;
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left:20px;
+}
+
+body {
+    margin: 0px;
+    background-color: $center-color;
+
+    min-width: $min-width;
+
+    font-family: Verdana, sans-serif;
+}
+
+.app {
+    height:100%;
+    
+    display: flex;
+    justify-content: center;
+
+}
+
+.bg_container {
+    display: flex;
+    justify-content: center;
+}
+
+.content_container {
+    display: flex;
+    justify-content: center;
+}
+
+.header {
+    position:fixed;
+    background-color:#3388FF;
+    width:100%;
+    height: $header-height;
+    display:flex;
+    justify-content:center;
+    min-width: $min-width;
+
+}
+
+.header_content {
+    height: 100%;
+
+    display:flex;
+    justify-content: center;
+}
+
+.header_content a div {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.header_item {
+    display: flex;
+    justify-content:center;
+    flex-direction: column;
+    
+
+    height:$header-height;
+    font-weight: bold;
+    
+    font-size:13pt;
+    transition: background-color 0.2s linear;
+}
+
+.header_item:hover {
+    background-color: $background-color;
+    transition: background-color 0.2s linear;
+}
+
+.header_item_selected {
+    background-color: $background-color;
+}
+
+.dot {
+    display: flex;
+    justify-content:center;
+    flex-direction: column;
+
+    font-size: 20pt;
+}
+
+.content_spacer {
+    margin-top: $header-height;
+    width:100%;
+}
+
+.content {
+    margin:40px;
+}
+
+.header_content a {
+    text-decoration: none;
+    color: black;
+}
+
+.heading {
+    font-size:30px;
+    text-align:center;
+}
+
+.small_heading {
+    font-size:20px;
+    text-align:center;
+}
+
+
+.item_container {
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.item {
+    background-color: $background-color;
+    color: $center-color;
+    border-radius: $radius;
+    padding: $item-padding;
+    min-width:300px;
+    text-align:center;
+    margin:20px;
+}
+
+
+.item li {
+    text-align: left;
+    
+}
+
+.item li a {
+    color: $center-color
+}
+
+.ach_container {
+    display: flow;
+}
+
+.ach {
+    background-color: $background-color;
+    margin-bottom:20px;
+    border-radius:$radius;
+    padding: $item-padding;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    color: $center-color;
+    font-size: 18pt;
+}
+
+.ach img {
+    height:200px;
+    margin-right: 20px;
+}
+
+.ach_container a {
+    text-decoration: none;
+}
