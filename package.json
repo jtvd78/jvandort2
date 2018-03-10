@@ -13,10 +13,12 @@
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
     "react-router-dom": "^4.2.2",
-    "sass-autoprefixer": "^1.0.1"
+    "sass-autoprefixer": "^1.0.1",
+    "update": "^0.7.4"
   },
   "devDependencies": {
-    "typescript": "^2.7.2"
+    "typescript": "^2.7.2",
+    "webpack": "^4.1.1"
   },
   "author": "",
   "license": "ISC"
