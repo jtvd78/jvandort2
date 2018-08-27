@@ -1,10 +1,16 @@
 $header-height: 60px;
 
-$center-color:#E5E5E5;
-$background-color: #555;
+//$center-color:#E5E5E5;
+$center-color:#e5ecff;
+$background-color: #6a6a6a;
+$darker: #3d3d3d;
+//$background-color: $center-color;
 $header-color: #3388FF;
+$text-color: white;
 $radius: 10px;
 $item-padding: 10px;
+
+$nextbeat: #1976D2;
 
 $min-width: 960px;
 
@@ -14,9 +20,16 @@ $min-width: 960px;
 }
 
 ul {
-    margin-top: 10px;
-    margin-bottom: 10px;
     margin-left:20px;
+}
+
+li {
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
+hr {
+    border: 1px solid $background-color;
 }
 
 body {
@@ -25,7 +38,7 @@ body {
 
     min-width: $min-width;
 
-    font-family: Verdana, sans-serif;
+    font-family: Arial, sans-serif;
 }
 
 .app {
@@ -44,6 +57,7 @@ body {
 .content_container {
     display: flex;
     justify-content: center;
+    width:100%;
 }
 
 .header {
@@ -106,6 +120,7 @@ body {
 
 .content {
     margin:40px;
+    max-width:2560px;
 }
 
 .header_content a {
@@ -116,6 +131,7 @@ body {
 .heading {
     font-size:30px;
     text-align:center;
+    margin-bottom: 5px;
 }
 
 .small_heading {
@@ -133,7 +149,7 @@ body {
 
 .item {
     background-color: $background-color;
-    color: $center-color;
+    color: $text-color;
     border-radius: $radius;
     padding: 0;
     min-width:300px;
@@ -147,7 +163,7 @@ body {
 }
 
 .item li a {
-    color: $center-color
+    color: $text-color
 }
 
 .item_header {
@@ -162,7 +178,10 @@ body {
 }
 
 .ach_container {
-    display: flow;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width:100%
 }
 
 .ach {
@@ -171,17 +190,143 @@ body {
     border-radius:$radius;
     padding: $item-padding;
     display: flex;
-    justify-content: space-between;
-    align-items:center;
-    color: $center-color;
-    font-size: 18pt;
+    justify-content: space-between;     //Push text and image away from each other
+    align-items:center;                 //Center Text vertically
+    color: $text-color;
+    font-size: 15pt;
+    
 }
 
 .ach img {
-    height:200px;
+    height:150px;
     margin-right: 20px;
 }
 
 .ach_container a {
     text-decoration: none;
+    width:40%;
+    flex-grow: 1;
+    margin:20px;
+    margin-bottom:0px;
+}
+
+.title {
+    font-size: 15pt;
+    font-weight: bold;
+
+}
+
+.eagle_container {}
+
+.eagle_images_container {
+    background-color: $background-color;
+    width:100%;
+    min-height: 500px;
+    max-height:1000px;
+    user-select: none;
+    display: flex;
+    border-radius: 15px;
+}
+
+.eagle_images {
+    display: inline-block;
+    overflow:hidden;
+    flex-grow: 1;
+    width:100%;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+.eagle_image {
+    margin-right: 20px;
+    margin-left: 20px;
+    height: 96%;
+}
+
+.images_button {
+    background-color: $background-color;
+    height: 100%;
+    width: 50px;
+    display: inline-block;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.projects_item {
+    padding: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 150px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.projects_item_selected {
+    background-color: $darker;
+}
+
+.content {
+    
+}
+
+.content a {
+
+}
+
+.projects_list {
+    display: flex;
+    justify-content: center;
+    background-color: $background-color;
+    border-top: 1px solid black;
+}
+
+
+.project_item {
+   
+}
+
+.projects_list a:visited {
+    color: $text-color;
+    
+   
+    text-decoration: none;
+}
+
+.projects_list a {
+    color: $text-color;
+    text-decoration: none;
+
+}
+
+.project_item {
+    padding: 20px;
+}
+
+.project_title {
+    font-size: 15pt;
+    padding-top: 20px;
+    font-weight: bold;
+}
+
+.project_item_container a {
+    text-decoration: none;
+}
+
+.split {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+}
+
+.half {
+    width: 850px;
 }
