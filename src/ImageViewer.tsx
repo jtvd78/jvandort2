@@ -13,21 +13,19 @@ type State = {
 const imagesPerSide = 2;
 
 class ImageViewer extends React.Component<Props, State> {
-    
     constructor(props: Props) {
         super(props);
 
-        let images : JSX.Element[] = props.images.map(image => <ImageContainer url={image} />);
+        const images: JSX.Element[] = props.images.map((image) => <ImageContainer url={image} />);
         this.state = {images: images, imageNum: 0} ;
     }
 
     render() {
         const images = this.state.images;
-        let orderedImages: JSX.Element[] = []
+        const orderedImages: JSX.Element[] = [];
 
         let current = this.state.imageNum;
-        for (let i = 0; i < imagesPerSide * 2 + 1; i++)
-        {
+        for (let i = 0; i < imagesPerSide * 2 + 1; i++) {
             orderedImages.push(images[current++]);
             if (current === images.length) {
                 current = 0;
@@ -46,13 +44,13 @@ class ImageViewer extends React.Component<Props, State> {
                     <img src={require("./resources/img/back.png")} style={{transform: "rotate(180deg)"}}/>
                 </div>
             </div>
-        );        
+        );
     }
 
     prev() {
         const oldNum = this.state.imageNum;
         const newNum = oldNum === (this.state.images.length - 1) ? 0 : oldNum + 1;
-        this.setState({images: this.state.images, imageNum: newNum} )
+        this.setState({images: this.state.images, imageNum: newNum} );
     }
 
     next() {

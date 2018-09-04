@@ -1,7 +1,7 @@
-import * as React from "react"
-import  {Link} from 'react-router-dom';
+import * as React from "react";
+import {Link} from "react-router-dom";
 
-import ImageViewer from '../ImageViewer'
+import ImageViewer from "../ImageViewer";
 
 const images  = [
     require("../resources/img/eagle/dur1.jpg"),
@@ -21,6 +21,6 @@ const Eagle = (props: any) => {
             <ImageViewer images={images} height={500} />
         </div>
     );
-}
+};
 
-export default Eagle
+export default Eagle;

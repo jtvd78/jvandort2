@@ -1,16 +1,16 @@
-import * as React from "react"
-import  {Link} from 'react-router-dom';
+import * as React from "react";
+import {Link} from "react-router-dom";
 
 const style = {
     paddingLeft: 20
-}
+};
 
 const Work = (props: any) => (
     <div className="work_container">
-     <div style={{background:'#daffef', padding:15, boxShadow:"3px 3px 1px #616161", marginBottom:35}}>
+     <div style={{background: "#daffef", padding: 15, boxShadow: "3px 3px 1px #616161", marginBottom: 35}}>
             <div className="heading"> Work Experience </div>
 
-            <p className="title" style={{display:"inline-block"}}>Boeing</p> <span>Summer 2018 &ndash; Fairfax VA</span>
+            <p className="title" style={{display: "inline-block"}}>Boeing</p> <span>Summer 2018 &ndash; Fairfax VA</span>
             <div style={style} >
                 <ul>
                     <li>Software Engineering Internship</li>
@@ -24,7 +24,7 @@ const Work = (props: any) => (
             </div>
 
             <br />
-            <p className="title" style={{display:"inline-block"}}> Somerville High School </p> <span> Summer 2015, 2016</span>
+            <p className="title" style={{display: "inline-block"}}> Somerville High School </p> <span> Summer 2015, 2016</span>
             <div style={style} >
                 <ul>
                     <li> Supervised 4 employees (2016) </li>
@@ -32,8 +32,7 @@ const Work = (props: any) => (
                 </ul>
             </div>
         </div>
-    </div>
-   
-)
+    </div> 
+);
 
-export default Work
+export default Work;
