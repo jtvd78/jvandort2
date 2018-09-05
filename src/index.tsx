@@ -92,8 +92,6 @@ const Header = (props: any) => {
 const None = (props: any) =>  <div />
 
 const Container = () => {
-
-    const spacer = (props: any) => <div style={{height: 41}} />
     
     return (
         <div className="content_container">
@@ -101,10 +99,6 @@ const Container = () => {
                 <div style={{paddingLeft: 40, paddingRight: 40}}>
                     <div className="content">
                         <div className="content_bg">
-                            <Switch>
-                                <Route path="/proj" component={spacer} />
-                                <Route path="/" component={None}/>
-                            </Switch>
                             <Switch>
                                 <Route path="/ach" component={Achievements} />
                                 <Route path="/proj" component={Projects} />

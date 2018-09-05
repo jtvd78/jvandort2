@@ -11,7 +11,7 @@ const Education = (props: any) => {
     };
 
     return (
-        <div style={{background: "#daffef", padding: 15, boxShadow: "3px 3px 1px #616161", marginBottom: 35}}>
+        <div className="section">
             <div className="heading"> Education </div>
 
             <span style={{fontWeight: "bold"}}>The University of Maryland</span> &mdash; College Park
@@ -38,7 +38,7 @@ const Education = (props: any) => {
 const Bars = (props: any) => {
 
     return (
-        <div style={{background: "#daffef", padding: 15, boxShadow: "3px 3px 1px #616161", marginBottom: 35}}>
+        <div className="section">
             <div className="heading"> Skillset </div>
             <br />
 
@@ -66,7 +66,7 @@ const Bars = (props: any) => {
 const Home = (props: any) => (
     <>
         <div style={{width: "100%", textAlign: "center"}}>
-            <div style={{background:"#daffef", padding:15, boxShadow:"3px 3px 1px #616161", marginBottom:10, maxWidth:1400, display:"inline-block"}}>     
+            <div className="home_header section">     
 
             <div className="heading"> Justin Van Dort </div>
                 I am a 4th year computer engineering student at the University of Maryland. I began
@@ -78,9 +78,6 @@ const Home = (props: any) => (
                 JQuery, React, and stanard JavaScript to develop front-end web applications. 
             </div>
         </div>
-
-        <br />
-        <br />
 
         <div className="split">
             <div className="half">

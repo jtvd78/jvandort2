@@ -6,8 +6,8 @@ const style = {
 };
 
 const Work = (props: any) => (
-    <div className="work_container">
-     <div style={{background: "#daffef", padding: 15, boxShadow: "3px 3px 1px #616161", marginBottom: 35}}>
+    <>
+     <div className="section" >
             <div className="heading"> Work Experience </div>
 
             <p className="title" style={{display: "inline-block"}}>Boeing</p> <span>Summer 2018 &ndash; Fairfax VA</span>
@@ -32,7 +32,7 @@ const Work = (props: any) => (
                 </ul>
             </div>
         </div>
-    </div> 
+    </> 
 );
 
 export default Work;

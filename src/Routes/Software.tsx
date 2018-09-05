@@ -15,7 +15,7 @@ const Item = (title: string, content: any) => {
 const Java_Item = Item("Java",
     <ul>
         <li><Link to="/proj/nextbeat">NextBeat Android</Link></li>
-        <li>Graphing Calculator</li>
+        <li><a href="https://github.com/jtvd78/graphing-calculator">Graphing Calculator</a></li>
         <li><Link to="/proj/schedule">UMD Schedule Builder</Link></li>
         <li><a href="https://github.com/jtvd78/Library"> Java Swing Utility Library</a> </li>
     </ul>
@@ -24,7 +24,7 @@ const Java_Item = Item("Java",
 const C_Item = Item("C/C++",
     <ul>
         <li><Link to="/proj/opengl" >Open GL Test Application</Link></li>
-        <li>BitTorrent Client</li>
+        <li><a href="https://github.com/jtvd78/bt">BitTorrent Client</a></li>
     </ul>
 );
 
@@ -42,7 +42,7 @@ const Swift_Item = Item("Swift",
 
 const Typescript_Item = Item("TypeScript",
     <ul>
-        <li><a href="https://github.com/jtvd78/jvandort2">Jvandort.com</a></li>
+        <li><a href="https://github.com/jtvd78/jvandort2">jvandort.com</a></li>
         <li>
             <Link to="/proj/webgraph">WebGraph</Link>
         </li>
@@ -51,9 +51,9 @@ const Typescript_Item = Item("TypeScript",
 
 const Swing_Item = Item("AWT/Swing",
     <ul>
-        <li>Graphing Calculator</li>
-        <li>UMD Schedule Builder</li>
-        <li>Custom Graphics Wrapper</li>
+        <li><a href="https://github.com/jtvd78/graphing-calculator">Graphing Calculator</a></li>
+        <li><Link to="/proj/schedule">UMD Schedule Builder</Link></li>
+        <li><a href="https://github.com/jtvd78/Library"> Java Swing Utility Library</a> </li>
     </ul>
 )
 
@@ -66,7 +66,7 @@ const JavaFX_Item = Item("JavaFX",
 
 const React_Item = Item("React", 
     <ul>
-        <li>This Page! (<a href="https://github.com/jtvd78/jvandort2">Source</a>)</li>
+        <li><a href="https://github.com/jtvd78/jvandort2">jvandort.com</a></li>
         <li>NextBeat Homepage</li>
     </ul>
 );

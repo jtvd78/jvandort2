@@ -24,7 +24,7 @@ const Achievements = (props: any) => (
             </div></a>
             
         </div>
-        <div style={{padding:10}}>
+        <div style={{padding:20}}>
             <Eagle />
         </div>
         

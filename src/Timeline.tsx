@@ -49,7 +49,7 @@ const Date = (props: {text: string}) => {
 
 const Line = (props: {width: number, offset: number, top: number}) => {
     return (
-        <div style={{height:"595px", borderLeft: props.width + "px solid " + color, position:"absolute", marginLeft: props.offset - props.width / 2, boxSizing: "border-box", top: props.top}} />    
+        <div style={{height:"620px", borderLeft: props.width + "px solid " + color, position:"absolute", marginLeft: props.offset - props.width / 2, boxSizing: "border-box", top: props.top}} />    
     )
 }
 
@@ -59,17 +59,12 @@ const Timeline = (props: any) => {
     const offset = circle_size / 2;
 
     return (
-        <div style={{background:'#daffef', padding:15, boxShadow:"3px 3px 1px #616161", marginBottom:35}}>
+        <div className="section">
             <div className="heading"> Timeline </div>
             <br />
 
             <div style={{position:"relative"}} >
                 <Line offset={offset} top={10} width={line_width} />
-
-               
-
-
-             
 
                 <Date text="2010" />
                 <Event>
@@ -84,10 +79,6 @@ const Timeline = (props: any) => {
                     <span style={{fontWeight:"bold"}}>December</span> - First PHP Project
                 </Event>
 
-
-
-
-
                 <Date  text="2012" />
                 <Event>
                     <span style={{fontWeight:"bold"}}>March</span> - Started Java Graphing Calculator
@@ -98,6 +89,9 @@ const Timeline = (props: any) => {
 
                 
                 <Date  text="2015" />
+                <Event>
+                    <span style={{fontWeight:"bold"}}>September</span> - First Semester at UMD
+                </Event>
                 <Event>
                     <span style={{fontWeight:"bold"}}>October</span> - Started Schedule Builder
                 </Event>

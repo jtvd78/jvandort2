@@ -5,7 +5,7 @@ import {Switch, Route, Link} from "react-router-dom";
 import NextBeat from "./NextBeat";
 import Software from "./Software";
 
-const WebGraphFrame = <iframe src="http://webgraph.jvandort.com" style={{flex: "1", height: 600, border:"none"}} />
+const WebGraphFrame = <iframe src="http://webgraph.jvandort.com" style={{flex: "1", height: 600, border:"none", margin: 20}} />
 
 const WebGraph = (props: any) => (
     <div style={{display: "flex", flexDirection:"column"}}>
@@ -32,7 +32,10 @@ const scheduleImages = [
 
 const ScheduleBuilder = (props: any) => (
     <>
-        <ImageViewer images={scheduleImages} height={650} />
+        <div style={{margin: 20}}>
+            <ImageViewer images={scheduleImages} height={650} />
+        </div>
+        
         <div style={{justifyContent:"center", alignItems:"center", display:"flex", height: 60, flexDirection: "column"}}>
             <div style={{fontSize:"15pt"}}>
                 <a href="https://github.com/jtvd78/schedule" style={{color: "black"}}>Github</a>
@@ -75,8 +78,8 @@ const ProjectsContent = (props: any) => {
         ProjectRow({name: "Next Beat", language: "Swift", platform: "iOS", tech: "RxSwift", date: "February 2017", link: "/proj/nextbeat"}),
         ProjectRow({name: "OpenGL Test Application", language: "C++", platform: "Desktop", tech: "3D Graphics, OpenGL", date: "June 2017", href: "https://github.com/jtvd78/opengl"}),
         ProjectRow({name: "WebGraph", language: "Typescript", platform: "React", tech: "HTML Canvas", date: "January 2018", link:"/proj/webgraph"}),
-        ProjectRow({name: "jvandort.com", language: "Typescript", platform: "React", tech: "Webpack", date: "March 2018"}),
-        ProjectRow({name: "BitTorrent Client", language: "C++", platform: "Linux", tech: "Linux Sockets", date: "April 2018"})
+        ProjectRow({name: "jvandort.com", language: "Typescript", platform: "React", tech: "Webpack", date: "March 2018", href:"https://github.com/jtvd78/jvandort2"}),
+        ProjectRow({name: "BitTorrent Client", language: "C++", platform: "Linux", tech: "Linux Sockets", date: "April 2018", href:"https://github.com/jtvd78/bt"})
     ];
 
     return (

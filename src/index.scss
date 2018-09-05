@@ -148,6 +148,7 @@ body {
     padding-top: 40px;
     background: white;
     width: 100%;
+    border: 1px solid #afafaf;
 }
 
 .header_content a {
@@ -337,6 +338,7 @@ body {
     width: 100%;
     position: fixed;
     top: $header-height;
+    border-bottom: 1px solid black;
 }
 
 
@@ -371,18 +373,32 @@ body {
     text-decoration: none;
 }
 
+.section {
+    background:#e7fff5;
+    padding: 15px;
+    margin-bottom: 35px;  
+    border: 1px solid #afafaf;
+}
+
+.home_header {
+    min-width: 770px;
+    width: 45%;
+    display: inline-block;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+}
+
 .split {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    margin-left:5px;
-    margin-right:5px;
 }
 
 .half {
-    width: 860px;
-    padding-left: 5px;
-    padding-right:5px;
+    min-width: 800px;
+    width: 45%;    
+    margin-left: 2.5%;
+    margin-right:2.5%;
 }
 
 .projects_table {
